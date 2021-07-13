@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Trip;
 class PageController extends Controller
 {
     //
@@ -11,6 +11,8 @@ class PageController extends Controller
         return view('home');
     }
     public function viaggi() {
-        return view('viaggi.index');
+        $trips = Trip::all();
+        //dd($trips);
+        return view('viaggi.index', compact('trips'));
     }
 }
