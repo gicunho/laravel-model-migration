@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 50px;
+}
+
+.trips {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+}
+
+.trips .trip {
+  text-align: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 30px;
+}
+

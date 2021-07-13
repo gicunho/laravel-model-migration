@@ -10,9 +10,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
 
         {{-- My Style --}}
-
+        <link rel="stylesheet" href="{{asset('css/app.css')}}">
     </head>
     <body>
+        <header>
+            <h1>BoolTravel</h1>
+        </header>
         <div class="container">
             @yield('content')
         </div>
